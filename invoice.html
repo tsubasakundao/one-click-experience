@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>登録完了のお知らせ</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  </head>
+
+  <body>
+    <section class="hero is-warning">
+    <div class="hero-body">
+      <div id="app" class="container">
+      <h1 class="title is-size-1">
+      ご登録が完了いたしました
+      </h1>
+      <p class="is-size-3">お客様のご登録が正式に完了いたしました。</p>
+      <p class="is-size-3 has-text-danger"><span class="has-text-weight-bold">登録料4545万円</span>を、三日以内に至急下記口座までお振込みください。</p>
+      <p class="is-size-3 has-text-danger">尚、三日たってもお振込みが行われない場合、<span class="has-text-weight-bold">法的措置</span>をとらせていただきます。</p>
+      <div class="notification is-danger" v-bind:style="{background: color}">
+        <p class="is-size-2 has-text-centered">残り{{ count }}秒</p>
+      </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <h2 class="title">お振込先</h2>
+      <table class="table is-striped is-fullwidth">
+        <tr>
+          <td>銀行名</td><td>Tsubasa銀行</td>
+        </tr>
+        <tr>
+          <td>口座名義</td><td>だまされた サイト</td>
+        </tr>
+        <tr>
+          <td>口座番号</td><td>454545</td>
+        </tr>
+        <tr>
+          <td>振込金額</td><td>4545万円</td>
+        </tr>
+      </table>
+      <h2 class="title">お問い合わせ先</h2>
+      <table class="table is-striped is-fullwidth">
+        <tr>
+          <td>電話番号</td><td>0120-081-072</td>
+        </tr>
+        <tr>
+          <td>メールアドレス</td><td>info@example.com</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script type="text/javascript" src="invoice.js"></script>
+</body>
+</html>
